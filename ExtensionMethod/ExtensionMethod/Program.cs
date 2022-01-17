@@ -20,8 +20,8 @@ namespace ExtensionMethod
             // fonksiyonlarımız ve bizim isteğimiz sonuçlarını Dictionary e yüklüyoruz mesele {func1 , true} yazarsak Numara olsun mu "Evet demiş oluyoruz"
             List<KeyValuePair<object, bool>> mapping = new List<KeyValuePair<object, bool>>()
             {
-                new KeyValuePair<object, bool>(func1 , true ),
-                new KeyValuePair<object, bool>(func2 , false ),
+                new KeyValuePair<object, bool>(func1 , false ),
+                new KeyValuePair<object, bool>(func2 , true ),
                 //new KeyValuePair<object, bool>(func2 , false )
 
             };

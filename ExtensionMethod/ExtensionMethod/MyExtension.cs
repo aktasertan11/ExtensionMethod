@@ -11,15 +11,21 @@ namespace ExtensionMethod
         public static bool IsValidPassword(this string str, List<KeyValuePair<object, bool>> control)
         {
             
-            bool result = false;
+            bool result = true;
+            bool tempResult;
 
             foreach(var item in control)
             {
                if((bool)item.Key == item.Value) { 
-                result = true;
+                tempResult = true;
                 }
+                else
+                {
+                    tempResult = false;
+                }
+                result = result && tempResult;
             }
-            // Burada ki yapı tam bir kontrol sağlamıyor ama ödevin amacına uyuyor.
+            
 
             return result;
         }
