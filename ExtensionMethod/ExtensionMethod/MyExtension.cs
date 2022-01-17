@@ -8,7 +8,7 @@ namespace ExtensionMethod
 {
     public static class MyExtension
     {
-        public static bool IsValidPassword(this string str, List<KeyValuePair<object, bool>> control)
+        public static bool IsValidPassword( List<KeyValuePair<object, bool>> control)
         {
             
             bool result = true;
